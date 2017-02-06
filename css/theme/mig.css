@@ -1,0 +1,473 @@
+@charset "UTF-8";
+/**
+ * A simple theme for reveal.js presentations, similar
+ * to the default theme. The accent color is darkblue.
+ *
+ * This theme is Copyright (C) 2012 Owen Versteeg, https://github.com/StereotypicalApps. It is MIT licensed.
+ * reveal.js is Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+/*********************************************
+ * FONT STYLES
+ *********************************************/
+@font-face {
+  font-family: 'Bariol-Bold';
+  src: url("fonts/bariol_bold-webfont.eot");
+  src: local("☺"), url("fonts/bariol_bold-webfont.woff") format("woff"), url("fonts/bariol_bold-webfont.ttf") format("truetype"), url("fonts/bariol_bold-webfont.svg") format("svg");
+}
+@font-face {
+  font-family: 'Bariol-Bold-Italic';
+  src: url("fonts/bariol_bold_italic-webfont.eot");
+  src: local("☺"), url("fonts/bariol_bold_italic-webfont.woff") format("woff"), url("fonts/bariol_bold_italic-webfont.ttf") format("truetype"), url("fonts/bariol_bold_italic-webfont.svg") format("svg");
+}
+@font-face {
+  font-family: 'Bariol-Regular';
+  src: url("fonts/bariol_regular-webfont.eot");
+  src: local("☺"), url("fonts/bariol_regular-webfont.woff") format("woff"), url("fonts/bariol_regular-webfont.ttf") format("truetype"), url("fonts/bariol_regular-webfont.svg") format("svg");
+}
+@font-face {
+  font-family: 'Bariol-Regular-Italic';
+  src: url("fonts/bariol_regular_italic-webfont.eot");
+  src: local("☺"), url("fonts/bariol_regular_italic-webfont.woff") format("woff"), url("fonts/bariol_regular_italic-webfont.ttf") format("truetype"), url("fonts/bariol_regular_italic-webfont.svg") format("svg");
+}
+/*********************************************
+ * GLOBAL STYLES
+ *********************************************/
+/* line 49, ../../source/scss/mig.scss */
+body {
+  background: #fff;
+  background-color: #fff;
+}
+
+/* line 53, ../../source/scss/mig.scss */
+.reveal {
+  font-family: 'Bariol-Regular';
+  font-size: 36px;
+  font-weight: normal;
+  color: #000;
+}
+
+/* line 60, ../../source/scss/mig.scss */
+.invert {
+  background-color: #70af49;
+  color: #fff;
+}
+
+/* line 65, ../../source/scss/mig.scss */
+::selection {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.99);
+  text-shadow: none;
+}
+
+/* line 70, ../../source/scss/mig.scss */
+.reveal .slides > section,
+.reveal .slides > section > section {
+  line-height: 1.3;
+  font-weight: inherit;
+}
+
+/*********************************************
+ * HEADERS
+ *********************************************/
+/* line 78, ../../source/scss/mig.scss */
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  margin: 0 0 20px 0;
+  color: #70af49;
+  font-family: 'Bariol-Bold';
+  font-weight: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-transform: none;
+  text-shadow: none;
+  word-wrap: break-word;
+}
+
+/* line 94, ../../source/scss/mig.scss */
+.invert h1,
+.invert h2,
+.invert h3,
+.invert h4,
+.invert h5,
+.invert h6 {
+  color: #fff;
+}
+
+/* line 103, ../../source/scss/mig.scss */
+.reveal h1 {
+  font-size: 3.77em;
+}
+
+/* line 106, ../../source/scss/mig.scss */
+.reveal h2 {
+  font-size: 2.11em;
+}
+
+/* line 109, ../../source/scss/mig.scss */
+.reveal h3 {
+  font-size: 1.55em;
+}
+
+/* line 112, ../../source/scss/mig.scss */
+.reveal h4 {
+  font-size: 1em;
+}
+
+/* line 115, ../../source/scss/mig.scss */
+.reveal h1 {
+  text-shadow: none;
+}
+
+/*********************************************
+ * OTHER
+ *********************************************/
+/* line 121, ../../source/scss/mig.scss */
+.reveal p {
+  margin: 20px 0;
+  line-height: 1.3;
+}
+
+/* Ensure certain elements are never larger than the slide itself */
+/* line 126, ../../source/scss/mig.scss */
+.reveal img,
+.reveal video,
+.reveal iframe {
+  max-width: 95%;
+  max-height: 95%;
+}
+
+/* line 132, ../../source/scss/mig.scss */
+.reveal strong,
+.reveal b {
+  font-weight: bold;
+}
+
+/* line 136, ../../source/scss/mig.scss */
+.reveal em {
+  font-style: italic;
+}
+
+/* line 139, ../../source/scss/mig.scss */
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  display: inline-block;
+  text-align: left;
+  margin: 0 0 0 1em;
+}
+
+/* line 146, ../../source/scss/mig.scss */
+.reveal ol {
+  list-style-type: decimal;
+}
+
+/* line 149, ../../source/scss/mig.scss */
+.reveal ul {
+  list-style-type: disc;
+}
+
+/* line 152, ../../source/scss/mig.scss */
+.reveal ul ul {
+  list-style-type: square;
+}
+
+/* line 155, ../../source/scss/mig.scss */
+.reveal ul ul ul {
+  list-style-type: circle;
+}
+
+/* line 158, ../../source/scss/mig.scss */
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ol,
+.reveal ol ul {
+  display: block;
+  margin-left: 40px;
+}
+
+/* line 165, ../../source/scss/mig.scss */
+.reveal dt {
+  font-weight: bold;
+}
+
+/* line 168, ../../source/scss/mig.scss */
+.reveal dd {
+  margin-left: 40px;
+}
+
+/* line 171, ../../source/scss/mig.scss */
+.reveal q,
+.reveal blockquote {
+  quotes: none;
+}
+
+/* line 175, ../../source/scss/mig.scss */
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* line 185, ../../source/scss/mig.scss */
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+/* line 189, ../../source/scss/mig.scss */
+.reveal q {
+  font-style: italic;
+}
+
+/* line 192, ../../source/scss/mig.scss */
+.reveal pre {
+  display: block;
+  position: relative;
+  width: 90%;
+  margin: 20px auto;
+  text-align: left;
+  font-size: 0.55em;
+  font-family: monospace;
+  line-height: 1.2em;
+  word-wrap: break-word;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* line 204, ../../source/scss/mig.scss */
+.reveal code {
+  font-family: monospace;
+}
+
+/* line 207, ../../source/scss/mig.scss */
+.reveal pre code {
+  display: block;
+  padding: 5px;
+  overflow: auto;
+  max-height: 400px;
+  word-wrap: normal;
+}
+
+/* line 214, ../../source/scss/mig.scss */
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 219, ../../source/scss/mig.scss */
+.reveal table th {
+  font-weight: bold;
+}
+
+/* line 222, ../../source/scss/mig.scss */
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+
+/* line 228, ../../source/scss/mig.scss */
+.reveal table th[align="center"],
+.reveal table td[align="center"] {
+  text-align: center;
+}
+
+/* line 232, ../../source/scss/mig.scss */
+.reveal table th[align="right"],
+.reveal table td[align="right"] {
+  text-align: right;
+}
+
+/* line 236, ../../source/scss/mig.scss */
+.reveal table tbody tr:last-child th,
+.reveal table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* line 240, ../../source/scss/mig.scss */
+.reveal sup {
+  vertical-align: super;
+}
+
+/* line 243, ../../source/scss/mig.scss */
+.reveal sub {
+  vertical-align: sub;
+}
+
+/* line 246, ../../source/scss/mig.scss */
+.reveal small {
+  display: inline-block;
+  font-size: 0.6em;
+  line-height: 1.2em;
+  vertical-align: top;
+}
+
+/* line 252, ../../source/scss/mig.scss */
+.reveal small * {
+  vertical-align: top;
+}
+
+/*********************************************
+ * LINKS
+ *********************************************/
+/* line 258, ../../source/scss/mig.scss */
+.reveal a {
+  color: #00008B;
+  text-decoration: none;
+  -webkit-transition: color .15s ease;
+  -moz-transition: color .15s ease;
+  transition: color .15s ease;
+}
+
+/* line 265, ../../source/scss/mig.scss */
+.reveal a:hover {
+  color: #0000f1;
+  text-shadow: none;
+  border: none;
+}
+
+/* line 270, ../../source/scss/mig.scss */
+.reveal .roll span:after {
+  color: #fff;
+  background: #00003f;
+}
+
+/*********************************************
+ * IMAGES
+ *********************************************/
+/* line 277, ../../source/scss/mig.scss */
+.reveal section img {
+  margin: 15px 0px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 4px solid #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* line 283, ../../source/scss/mig.scss */
+.reveal section img.plain {
+  border: 0;
+  box-shadow: none;
+}
+
+/* line 287, ../../source/scss/mig.scss */
+.reveal a img {
+  -webkit-transition: all .15s linear;
+  -moz-transition: all .15s linear;
+  transition: all .15s linear;
+}
+
+/* line 292, ../../source/scss/mig.scss */
+.reveal a:hover img {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: #00008B;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+/*********************************************
+ * NAVIGATION CONTROLS
+ *********************************************/
+/* line 300, ../../source/scss/mig.scss */
+.reveal .controls .navigate-left,
+.reveal .controls .navigate-left.enabled {
+  border-right-color: #4D86A8;
+}
+
+/* line 304, ../../source/scss/mig.scss */
+.reveal .controls .navigate-right,
+.reveal .controls .navigate-right.enabled {
+  border-left-color: #4D86A8;
+}
+
+/* line 308, ../../source/scss/mig.scss */
+.reveal .controls .navigate-up,
+.reveal .controls .navigate-up.enabled {
+  border-bottom-color: #4D86A8;
+}
+
+/* line 312, ../../source/scss/mig.scss */
+.reveal .controls .navigate-down,
+.reveal .controls .navigate-down.enabled {
+  border-top-color: #4D86A8;
+}
+
+/* line 316, ../../source/scss/mig.scss */
+.reveal .controls .navigate-left.enabled:hover {
+  border-right-color: #0000f1;
+}
+
+/* line 319, ../../source/scss/mig.scss */
+.reveal .controls .navigate-right.enabled:hover {
+  border-left-color: #0000f1;
+}
+
+/* line 322, ../../source/scss/mig.scss */
+.reveal .controls .navigate-up.enabled:hover {
+  border-bottom-color: #0000f1;
+}
+
+/* line 325, ../../source/scss/mig.scss */
+.reveal .controls .navigate-down.enabled:hover {
+  border-top-color: #0000f1;
+}
+
+/*********************************************
+ * PROGRESS BAR
+ *********************************************/
+/* line 331, ../../source/scss/mig.scss */
+.reveal .progress {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* line 334, ../../source/scss/mig.scss */
+.reveal .progress span {
+  background: #fff;
+  -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+  transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
+}
+
+/*********************************************
+ * IFRAME
+ *********************************************/
+/* line 344, ../../source/scss/mig.scss */
+.iframe {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+/* line 351, ../../source/scss/mig.scss */
+.iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100% !important;
+  max-height: 100% !important;
+}
+
+/*********************************************
+ * CLEANIMAGE
+ *********************************************/
+/* line 363, ../../source/scss/mig.scss */
+.cleanimage img {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* line 369, ../../source/scss/mig.scss */
+.cleanimage-hand img {
+  cursor: pointer;
+}
