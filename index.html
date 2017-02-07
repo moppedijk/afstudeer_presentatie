@@ -19,7 +19,7 @@
 		</script>
 	</head>
 	<body>
-
+		<div id="logo" class="logo"></div>
 		<div class="reveal invert">
 			<div class="slides noscale">
 				
@@ -32,10 +32,10 @@
 
 				<!-- 
 					Met deze presentatie wil ik een aantal zaken duidelijk maken
-					- Hoe ziet het prototype er in actie uit?
+					- Hoe werkt het prototype
 					- Hoe zijn gebruikersresultaten verwerkt, wat werkte wel goed en wat niet?
 					- Hoe krijgen gebruikers notificaties
-					- Hoe weet MIG dat ze verder kunnen?
+					- Hoe weet Men in Green (MIG) dat ze verder kunnen?
 					- Wordt e-mail nog steeds gebruikt?
 				-->
 				<section>
@@ -43,10 +43,10 @@
 						## Met deze presentatie worden een aantal zaken uitgelicht.
 					</section>
 					<section>
-						<p>Hoe ziet het prototype er in actie uit?</p>
-						<p class="fragment">Hoe zijn gebruikersresultaten verwerkt, wat werkte wel goed en wat niet?</p>
+						<p>Hoe werkt het prototype?</p>
+						<p class="fragment">Hoe zijn gebruikersresultaten verwerkt?</p>
 						<p class="fragment">Hoe krijgen gebruikers notificaties?</p>
-						<p class="fragment">Hoe weet MIG dat de productie verder kan?</p>
+						<p class="fragment">Hoe weet Men in Green (MIG) dat de productie verder kan?</p>
 						<p class="fragment">Wordt e-mail nog steeds gebruikt?</p>
 					</section>
 				</section>
@@ -80,8 +80,9 @@
 
 				<!-- Prototype: 01 Ontwikkelaar - New version -->
 				<section>
-						<h2>Scenario</h2>
-						<p class="fragment">"Er is een complete set 'inspiratie' gemaakt en er wordt een versie 'conversie' aan toegevoegd"</p>
+						<h2>Hoe werkt het prototype?</h2>
+						<p>Senario:</p>
+						<p class="fragment">"Er is een complete set <span class="bggreen">'inspiratie'</span> gemaakt<br> en er wordt een <span class="bggreen">'conversie'</span> set aan toegevoegd"</p>
 						<p class="fragment">Het proces start bij de ontwikkelaar.</p>
 				</section>
 				<section class="iframe">
@@ -94,7 +95,7 @@
 					<img src="assets/img/slack_01.jpg" alt="Message slack">
 				</section>
 				<!-- Prototype: 02 Projectmanager - Client message-->
-				<section class="iframe">
+				<section class="iframe" id="prototype_1">
 					<!-- 10227975 -->
 					<!-- <iframe src="https://invis.io/KZAC2ZR5X#/217706396_Preview" frameborder="0" width="1280px" height="800px"></iframe> -->
 					<iframe src="assets/prototypes/10227975/index.html" frameborder="0" width="1280px" height="800px"></iframe>
@@ -109,7 +110,7 @@
 					</section>
 				</section>
 				<!-- Prototype: 03 Klant - Add feedback -->
-				<section class="iframe">
+				<section class="iframe" id="prototype_2">
 					<!-- 10228384 -->
 					<!-- <iframe src="https://invis.io/4VAC5C3UJ#/217714457_Preview" frameborder="0" width="1280px" height="800px"></iframe> -->
 					<iframe src="assets/prototypes/10228384/index.html#/screens/217714457" frameborder="0" width="1280px" height="800px"></iframe>
@@ -123,17 +124,17 @@
 					<img src="assets/img/slack_02.jpg" alt="Message slack">
 				</section>
 				<!-- Prototype: 04 Ontwikkelaar - New iteration -->
-				<section class="iframe">
+				<section class="iframe" id="prototype_3">
 					<!-- 10229122 -->
 					<!-- <iframe src="https://invis.io/DWAC7FN6X#/217739274_Preview" frameborder="0" width="1280px" height="800px"></iframe> -->
 					<iframe src="assets/prototypes/10229122/index.html#/screens/217739274" frameborder="0" width="1280px" height="800px"></iframe>
 				</section>
 				<!-- Ontwikkelaar communiceert met projectmanager -->
 				<section class="cleanimage">
-					<img src="assets/img/slack_01.jpg" alt="Message slack">
+					<img src="assets/img/slack_03.jpg" alt="Message slack">
 				</section>
 				<!-- Prototype: 05 Projectmanger - Client second message -->
-				<section class="iframe">
+				<section class="iframe" id="prototype_4">
 					<!-- 10227975 -->
 					<!-- <iframe src="https://invis.io/KZAC2ZR5X#/217706396_Preview" frameborder="0" width="1280px" height="800px"></iframe> -->
 					<iframe src="assets/prototypes/10227975/index.html" frameborder="0" width="1280px" height="800px"></iframe>
@@ -159,10 +160,13 @@
 				</section>
 				
 				<!-- 1) Status per flight -->
+				<!-- 
+					Opmerkingen: "Feedback geeft al de status van een banner aan".
+				-->
 				<section>
-					<section data-markdown>
-						## Flight status
-						Het was mogelijk om een status per banner te zetten, dit is een status per flight geworden
+					<section>
+						<h2>Flight status</h2>
+						<p>"Het was mogelijk om een <span class="bggreen">status per banner</span> te zetten,<br> dit is een <span class="bggreen">status per flight</span> geworden"</p>
 					</section>
 					<section class="cleanimage">
 						<img src="assets/img/status_old.jpg" alt="Flight status">
@@ -174,9 +178,9 @@
 
 				<!-- 2) Geen comments -->
 				<section>
-					<section data-markdown>
-						## Geen comments
-						Schrijven van comments naast feedback is weggehaald
+					<section>
+						<h2>Geen comments</h2>
+						<p>"Schrijven van <span class="bggreen">comments</span> naast <span class="bggreen">feedback</span> is een dubbele functionaliteit"</p>
 					</section>
 					<section class="cleanimage">
 						<img src="assets/img/comments_old.jpg" alt="Geen comments">
@@ -187,10 +191,13 @@
 				</section>
 
 				<!-- 3) View on mobile -->
+				<!--
+					Opmerkingen: "Er was behoeft aan deze functionateit bij een individuele banner".
+				 -->
 				<section>
-					<section data-markdown>
-						## View on mobile
-						 "View on mobile" is toegevoegd op meer plekken
+					<section>
+						<h2>View on mobile</h2>
+						<p>"Deze functionaliteit is <span class="bggreen">toegevoegd</span> op meer plekken"</p>
 					</section>
 					<section class="cleanimage">
 						<img src="assets/img/viewmobile_old.jpg" alt="View on mobile">
@@ -201,10 +208,13 @@
 				</section>
 
 				<!-- 4) Share functionaliteit -->
+				<!-- 
+					Opmerkingen: "Te veel onduidelijkheid over de functionaliteit".
+				-->
 				<section>
-					<section data-markdown>
-						## Share functionaliteit
-						 De "share" functionaliteit is simpeler geworden
+					<section>
+						<h2>Share functionaliteit</h2>
+						<p>"Deze functionaliteit is <span class="bggreen">simpeler</span> geworden"</p>
 					</section>
 					<section class="cleanimage">
 						<img src="assets/img/share_old.jpg" alt="Share">
@@ -216,29 +226,28 @@
 
 				<!-- 5) Iteraties -->
 				<section>
-					<section data-markdown>
-						## Iteraties
-						Proces meer structuur geven door iteraties
+					<section>
+						<h2>Iteraties</h2>
+						<p>"Proces <span class="bggreen">meer structuur</span> geven door iteraties"</p>
 					</section>
-					<section data-markdown>
-						In het eerste prototype was geen invulling gegeven aan deze requirement
+					<section>
+						<p>"In het eerste prototype was <span class="bggreen">geen invulling</span> gegeven aan deze requirement"</p>
 					</section>
 					<section class="cleanimage">
 						<img src="assets/img/iteraties.jpg" alt="Iteraties">
 					</section>
-					<section data-markdown>
-						## Het doel van iteraties
-						- De projectmanager kan hierdoor de klant laten zien hoeveel feedbackrondes er zijn geweest
-						- De ontwikkelaar geeft het proces meer structuur
-						- Oudere versies kunnen makkelijker bekeken worden
+					<section>
+						<h2>Het doel van iteraties</h2>
+						<p>De projectmanager kan de klant laten zien hoeveel feedbackrondes er zijn geweest</p>
+						<p class="fragment">De ontwikkelaar kan structuur geven aan de ontwikkeling</p>
 					</section>
 				</section>
 				
 				<!-- 6) Materiaal uploaden bij feedback -->
 				<section>
-					<section data-markdown>
-						## Materiaal
-						Materiaal uploaden bij feedback is verder uitgewerkt
+					<section>
+						<h2>Materiaal</h2>
+						<p>"Materiaal uploaden bij feedback is <span class="bggreen">verder uitgewerkt</span>"</p>
 					</section>
 					<section class="cleanimage">
 						<img src="assets/img/materiaal_old.jpg" alt="Materiaal">
@@ -252,10 +261,13 @@
 				</section>
 
 				<!-- 7) Feedback geven op banners en tonen van complete sets wordt los van elkaar ontworpen -->
+				<!-- 
+					Opmerkingen: "Te veel functionaliteiten op een pagina"
+				-->
 				<section>
-					<section data-markdown>
-						## Feedback panel los van complete set
-						Feedback geven op banners en tonen van complete sets is los van elkaar ontworpen
+					<section>
+						<h2>Feedback los van complete set</h2>
+						<p>"Feedback geven op banners<br> en tonen van complete sets is <span class="bggreen">los van elkaar ontworpen</span>"</p>
 					</section>
 					<section class="cleanimage">
 						<img src="assets/img/feedback_old.jpg" alt="Materiaal">
@@ -274,20 +286,20 @@
 					- Wordt er nog e-mail gebruikt?
 				-->
 				<section>
-					<section data-markdown>
-						## Notificaties
-						- Hoe weet MIG dat ze verder kunnen?
-						- Wordt er nog e-mail gebruikt?	
+					<section>
+						<h2>Notificaties</h2>
+						<p>Hoe weet MIG dat de productie verder kan?</p>
+						<p>Wordt er nog e-mail gebruikt?</p>
 					</section>
-					<section data-markdown>
-						## Hoe weet MIG dat ze verder kunnen?
-						- MIG gaat er vanuit dat als de klant een bericht terugstuurt via de 'share' functionaliteit dat het verder kan met de productie
+					<section>
+						<h2>Hoe weet MIG dat de productie verder kan?</h2>
+						<p>"Er is altijd <span class="bggreen">1</span> aanspreekpunt"</p>
 					</section>
-					<section data-markdown>
-						## Wordt er nog e-mail gebruikt?
-						- E-mail zal altijd een onderdeel van de communicatie blijven net als telefoon
-						- Als klanten snel willen schakelen zullen ze overstappen op e-mail of telefoon
-						- Bravo is een middel om sneller te kunnen werken geen vervanging
+					<section>
+						<h2>Wordt er nog e-mail gebruikt?</h2>
+						<p>E-mail zal altijd een <span class="bggreen">onderdeel van de communicatie</span> blijven</p>
+						<p class="fragment">Als klanten snel willen schakelen zullen ze <span class="bggreen">overstappen op e-mail of telefoon</span></p>
+						<p class="fragment">Bravo is een <span class="bggreeb">middel</span> om sneller te kunnen werken <span class="bggreen">geen vervanging</span></p>
 					</section>
 				</section>
 
@@ -298,12 +310,12 @@
 					- Iteraties kunnen verbeterd worden door deadlines of tijdsloten
 					- Video tonen
 				-->
-				<section data-markdown>
-					## Feedback?
-					- Voordat we naar de vragen gaan eerst een promo video
+				<section>
+					<h1>Feedback?</h1>
+					<p>Voordat we naar de vragen gaan eerst een <span class="bggreen">promo video</span></p>
 				</section>
 
-				<section>
+				<section id="video">
 					<iframe width="1280" height="720" src="https://www.youtube.com/embed/O0otS0NDWGQ" frameborder="0" allowfullscreen></iframe>
 				</section>
 
@@ -311,6 +323,7 @@
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
+		<!-- // <script src="lib/js/jquery-3.1.1.min.js"></script> -->
 		<script src="js/reveal.js"></script>
 		<script src="js/custom.js"></script>
 		<!-- / Live reload - Martijn's reload server: 6278456 -->

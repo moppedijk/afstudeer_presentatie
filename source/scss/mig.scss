@@ -372,3 +372,30 @@ body {
 .cleanimage-hand  img {
   cursor: pointer;
 }
+
+/*********************************************
+ * BACKGROUND GREEN
+ *********************************************/
+
+.bggreen {
+  background-color: #44841d;
+}
+
+/*********************************************
+ * LOGO
+ *********************************************/
+
+.logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  // background-color: #fff;
+  background-image: url(img/logo.svg);
+  z-index: 10;
+
+  &--hide {
+    display: none;
+  }
+}

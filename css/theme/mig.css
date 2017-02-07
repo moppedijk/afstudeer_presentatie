@@ -469,3 +469,29 @@ body {
 .cleanimage-hand img {
   cursor: pointer;
 }
+
+/*********************************************
+ * BACKGROUND GREEN
+ *********************************************/
+/* line 380, ../../source/scss/mig.scss */
+.bggreen {
+  background-color: #44841d;
+}
+
+/*********************************************
+ * LOGO
+ *********************************************/
+/* line 388, ../../source/scss/mig.scss */
+.logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-image: url(img/logo.svg);
+  z-index: 10;
+}
+/* line 398, ../../source/scss/mig.scss */
+.logo--hide {
+  display: none;
+}
