@@ -446,13 +446,11 @@ body {
   width: 100%;
   height: 100%;
   padding: 0;
+  background-color: #fff;
 }
 
-/* line 351, ../../source/scss/mig.scss */
+/* line 354, ../../source/scss/mig.scss */
 .iframe iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   max-width: 100% !important;
   max-height: 100% !important;
 }
@@ -460,14 +458,14 @@ body {
 /*********************************************
  * CLEANIMAGE
  *********************************************/
-/* line 363, ../../source/scss/mig.scss */
+/* line 366, ../../source/scss/mig.scss */
 .cleanimage img {
   background: none !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-/* line 369, ../../source/scss/mig.scss */
+/* line 372, ../../source/scss/mig.scss */
 .cleanimage-hand img {
   cursor: pointer;
 }

@@ -20,122 +20,301 @@
 	</head>
 	<body>
 
-		<!-- Live reload -->
-		<script src="//localhost:35729/livereload.js"></script>
-		<!-- / Live reload -->
-
 		<div class="reveal invert">
 			<div class="slides noscale">
-				<!-- Chapter 1 -->
-				<section id="slide_1" data-markdown>
+				
+				<section data-markdown>
 					<script type="text/template">
 						## Feedbackprocessen en optimalisatie
-						
-						Groenlichtpresentatie
+						Verdediging en productpresentatie
 					</script>
 				</section>
-				<section id="slide_2" data-markdown>
-					<script type="text/template">
-						## Recap
 
-						- Waar waren we gebleven?
-						- Bravo
-						- Feedback
-					</script>
-				</section>
+				<!-- 
+					Met deze presentatie wil ik een aantal zaken duidelijk maken
+					- Hoe ziet het prototype er in actie uit?
+					- Hoe zijn gebruikersresultaten verwerkt, wat werkte wel goed en wat niet?
+					- Hoe krijgen gebruikers notificaties
+					- Hoe weet MIG dat ze verder kunnen?
+					- Wordt e-mail nog steeds gebruikt?
+				-->
 				<section>
 					<section data-markdown>
-						<script type="text/template">
-							## Stakeholders
-						</script>
+						## Met deze presentatie worden een aantal zaken uitgelicht.
 					</section>
-					<section class="cleanimage">
-						<img src="img/stakeholdermap.png" alt="Stakeholdermap">
+					<section>
+						<p>Hoe ziet het prototype er in actie uit?</p>
+						<p class="fragment">Hoe zijn gebruikersresultaten verwerkt, wat werkte wel goed en wat niet?</p>
+						<p class="fragment">Hoe krijgen gebruikers notificaties?</p>
+						<p class="fragment">Hoe weet MIG dat de productie verder kan?</p>
+						<p class="fragment">Wordt e-mail nog steeds gebruikt?</p>
 					</section>
 				</section>
-				<section data-markdown>
-					<script type="text/template">
-						## Concept
 
-						- Vernieuwd productieproces
-						- Proces meer structuur geven
-						- Alle belanghebbende zijn betrokken
-						- Alle belanghebbende kunnen feedback geven
-						- Feedback is gebundeld
-						- Feedback is in de context van het product
-						- Klanten beter laten kijken naar individuele banners
-					</script>
-				</section>
-				<!-- 01 Intern - Eerste versie -->
-				<section class="iframe">
-					<iframe src="https://invis.io/YH9SKL2KT" frameborder="0" width="1280px" height="800px"></iframe>
-				</section>
-				<section>
-					<section class="cleanimage cleanimage-hand">
-						<img src="img/email_firstversion.png" alt="E-mail" onclick="Reveal.next();">
-					</section>
-					<section class="cleanimage">
-						<img src="img/email_firstversion_all.png" alt="E-mail All">
-					</section>
-				</section>
-				<!-- 02 Extern - Feedback -->
-				<section class="iframe">
-					<!-- <iframe src="https://invis.io/RC9YJZ36U" frameborder="0" width="1280px" height="800px"></iframe> -->
-				</section>
-				<section>
-					<section class="cleanimage">
-						<img src="img/email_feedback.png" alt="Feedback">
-					</section>
-					<section class="cleanimage">
-						<img src="img/email_feedback_all.png" alt="Feedback All">
-					</section>
-				</section>
-				<section data-markdown>
-					<script type="text/template">
-						## Upload een nieuwe banner
-					</script>
-				</section>
-				<!-- 03 Intern - Feedback -->
-				<section class="iframe">
-					<!-- <iframe src="https://invis.io/739YZX6N6" frameborder="0" width="1280px" height="800px"></iframe> -->
-				</section>
-				<!-- Volle previewer -->
-				<!-- <section class="iframe">
-					<iframe src="https://invis.io/UZ9Z0XDSG" frameborder="0" width="1280px" height="800px"></iframe>
-				</section> -->
-				<!-- Testen -->
-				<section>
-					<section data-markdown>
-						<script type="text/template">
-							## Evalueren
+				<!-- 
+					Om het prototype in actie te zien wordt gebruik gemaakt van een scenario
+					"Er is een complete set 'inspiratie' gemaakt 
+					en er wordt een versie 'conversie' aan toegevoegd"
 
-							- Iterne test met Invision prototype
-							- Externe test met technical prototype
-						</script>
-					</section>
-					<section data-markdown>
-						## Technical prototype
-						
-						- Google Analytics
-						- Echte data
-						- Echte klanten
-						- [Bravo prototype](http://web.staging.bravoflow.com/1#preview:7qs7p/version:187/feedback:1)
-					</section>
-				</section>
-				<section data-markdown>
-					## Hoe nu verder?
+					Scenario:
+					- Komt binnen op clients
+					- De ontwikkelaar maakt een nieuwe versie aan
+					- Upload 3 banners
+					- Geeft een seintje aan de projectmanager
+
+					- Projectmanager stuurt een bericht naar de klant
+
+					- Klant bekijk de versie
+					- Team bekijkt de versie en geeft feedback (heeft e-mail gekregen)
+					- Klant stuurt een bericht terug naar MIG
+
+					- Projectmanager krijgt bericht en zet productieteam aan het werk
 					
-					- Testen met gebruikers
-					- Testresultaten toevoegen in laatste prototype
-					- Documentatie uitschrijven
-					- Documentatie vormgeven
-					- Opleveren
+					- Ontwikkelaar bekijkt feedback
+					- Ontwikkelaar maakt een nieuwe iteratie
+					- Upload nieuwe banners
+					- Geeft projectmanger een seintje
+					
+					- Projectmanager stuurt de klant een bericht
+				-->
+
+				<!-- Prototype: 01 Ontwikkelaar - New version -->
+				<section>
+						<h2>Scenario</h2>
+						<p class="fragment">"Er is een complete set 'inspiratie' gemaakt en er wordt een versie 'conversie' aan toegevoegd"</p>
+						<p class="fragment">Het proces start bij de ontwikkelaar.</p>
 				</section>
+				<section class="iframe">
+					<!-- 10227122 -->
+					<!-- <iframe src="https://invis.io/32AC1ZKPD#/217690078_Clients" frameborder="0" width="1280px" height="800px"></iframe> -->
+					<iframe src="assets/prototypes/10227122/index.html#/screens/217690078" frameborder="0" width="1280px" height="800px"></iframe>
+				</section>
+				<!-- Image: Ontwikkelaar geeft projectmanager een seintje -->
+				<section class="cleanimage">
+					<img src="assets/img/slack_01.jpg" alt="Message slack">
+				</section>
+				<!-- Prototype: 02 Projectmanager - Client message-->
+				<section class="iframe">
+					<!-- 10227975 -->
+					<!-- <iframe src="https://invis.io/KZAC2ZR5X#/217706396_Preview" frameborder="0" width="1280px" height="800px"></iframe> -->
+					<iframe src="assets/prototypes/10227975/index.html" frameborder="0" width="1280px" height="800px"></iframe>
+				</section>
+				<!-- Image: e-mail send to all -->
+				<section>
+					<section class="cleanimage">
+						<img src="assets/img/email.png" alt="E-mail">
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/email_all.png" alt="E-mail">
+					</section>
+				</section>
+				<!-- Prototype: 03 Klant - Add feedback -->
+				<section class="iframe">
+					<!-- 10228384 -->
+					<!-- <iframe src="https://invis.io/4VAC5C3UJ#/217714457_Preview" frameborder="0" width="1280px" height="800px"></iframe> -->
+					<iframe src="assets/prototypes/10228384/index.html#/screens/217714457" frameborder="0" width="1280px" height="800px"></iframe>
+				</section>
+				<!-- Image: e-mail back to MIG -->
+				<section class="cleanimage">
+					<img src="assets/img/email_back.png" alt="E-mail">
+				</section>
+				<!-- Projectmanager overlegt met ontwikkelaar -->
+				<section class="cleanimage">
+					<img src="assets/img/slack_02.jpg" alt="Message slack">
+				</section>
+				<!-- Prototype: 04 Ontwikkelaar - New iteration -->
+				<section class="iframe">
+					<!-- 10229122 -->
+					<!-- <iframe src="https://invis.io/DWAC7FN6X#/217739274_Preview" frameborder="0" width="1280px" height="800px"></iframe> -->
+					<iframe src="assets/prototypes/10229122/index.html#/screens/217739274" frameborder="0" width="1280px" height="800px"></iframe>
+				</section>
+				<!-- Ontwikkelaar communiceert met projectmanager -->
+				<section class="cleanimage">
+					<img src="assets/img/slack_01.jpg" alt="Message slack">
+				</section>
+				<!-- Prototype: 05 Projectmanger - Client second message -->
+				<section class="iframe">
+					<!-- 10227975 -->
+					<!-- <iframe src="https://invis.io/KZAC2ZR5X#/217706396_Preview" frameborder="0" width="1280px" height="800px"></iframe> -->
+					<iframe src="assets/prototypes/10227975/index.html" frameborder="0" width="1280px" height="800px"></iframe>
+				</section>
+				<section>
+					<h2>"Einde scenario"</h2>
+				</section>
+
+				<!--
+					Gebruikersresulaten wat werkte wel en niet goed?
+					- Een aantal dingen uitgelicht
+					1) Het was mogelijk om een status per banner te zetten, dit is status per flight geworden
+					2) Schrijven van comments naast feedback is weggehaald
+					3) View on mobile is toegevoegd in de single view
+					4) Share functionaliteit is simpeler geworden
+					5) Proces meer structuur geven door iteraties (iteraties uitleggen)
+					6) Materiaal uploaden bij feedback
+					7) Feedback geven op banners en tonen van complete sets wordt los van elkaar ontworpen
+				-->
+				<section data-markdown>
+					## Hoe zijn gebruikersresultaten verwerkt? 
+					Wat werkte wel goed en wat niet?
+				</section>
+				
+				<!-- 1) Status per flight -->
+				<section>
+					<section data-markdown>
+						## Flight status
+						Het was mogelijk om een status per banner te zetten, dit is een status per flight geworden
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/status_old.jpg" alt="Flight status">
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/status_new.jpg" alt="Flight status">
+					</section>
+				</section>
+
+				<!-- 2) Geen comments -->
+				<section>
+					<section data-markdown>
+						## Geen comments
+						Schrijven van comments naast feedback is weggehaald
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/comments_old.jpg" alt="Geen comments">
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/comments_new.jpg" alt="Geen comments">
+					</section>
+				</section>
+
+				<!-- 3) View on mobile -->
+				<section>
+					<section data-markdown>
+						## View on mobile
+						 "View on mobile" is toegevoegd op meer plekken
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/viewmobile_old.jpg" alt="View on mobile">
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/viewmobile_new.jpg" alt="View on mobile">
+					</section>
+				</section>
+
+				<!-- 4) Share functionaliteit -->
+				<section>
+					<section data-markdown>
+						## Share functionaliteit
+						 De "share" functionaliteit is simpeler geworden
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/share_old.jpg" alt="Share">
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/share_new.jpg" alt="Share">
+					</section>
+				</section>
+
+				<!-- 5) Iteraties -->
+				<section>
+					<section data-markdown>
+						## Iteraties
+						Proces meer structuur geven door iteraties
+					</section>
+					<section data-markdown>
+						In het eerste prototype was geen invulling gegeven aan deze requirement
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/iteraties.jpg" alt="Iteraties">
+					</section>
+					<section data-markdown>
+						## Het doel van iteraties
+						- De projectmanager kan hierdoor de klant laten zien hoeveel feedbackrondes er zijn geweest
+						- De ontwikkelaar geeft het proces meer structuur
+						- Oudere versies kunnen makkelijker bekeken worden
+					</section>
+				</section>
+				
+				<!-- 6) Materiaal uploaden bij feedback -->
+				<section>
+					<section data-markdown>
+						## Materiaal
+						Materiaal uploaden bij feedback is verder uitgewerkt
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/materiaal_old.jpg" alt="Materiaal">
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/materiaal_new_01.jpg" alt="Materiaal">
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/materiaal_new_02.jpg" alt="Materiaal">
+					</section>
+				</section>
+
+				<!-- 7) Feedback geven op banners en tonen van complete sets wordt los van elkaar ontworpen -->
+				<section>
+					<section data-markdown>
+						## Feedback panel los van complete set
+						Feedback geven op banners en tonen van complete sets is los van elkaar ontworpen
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/feedback_old.jpg" alt="Materiaal">
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/feedback_new_01.jpg" alt="Materiaal">
+					</section>
+					<section class="cleanimage">
+						<img src="assets/img/feedback_new_02.jpg" alt="Materiaal">
+					</section>
+				</section>
+				
+				<!-- 
+					Notificaties
+					- Hoe weet MIG dat ze verder kunnen?
+					- Wordt er nog e-mail gebruikt?
+				-->
+				<section>
+					<section data-markdown>
+						## Notificaties
+						- Hoe weet MIG dat ze verder kunnen?
+						- Wordt er nog e-mail gebruikt?	
+					</section>
+					<section data-markdown>
+						## Hoe weet MIG dat ze verder kunnen?
+						- MIG gaat er vanuit dat als de klant een bericht terugstuurt via de 'share' functionaliteit dat het verder kan met de productie
+					</section>
+					<section data-markdown>
+						## Wordt er nog e-mail gebruikt?
+						- E-mail zal altijd een onderdeel van de communicatie blijven net als telefoon
+						- Als klanten snel willen schakelen zullen ze overstappen op e-mail of telefoon
+						- Bravo is een middel om sneller te kunnen werken geen vervanging
+					</section>
+				</section>
+
+				<!-- 
+					Afronden
+					- Je kan klanten nudgen maar niet scripten
+					- Bravo wordt gebruikt als hulpmiddel voor een productieproces niet als vervanging
+					- Iteraties kunnen verbeterd worden door deadlines of tijdsloten
+					- Video tonen
+				-->
+				<section data-markdown>
+					## Feedback?
+					- Voordat we naar de vragen gaan eerst een promo video
+				</section>
+
+				<section>
+					<iframe width="1280" height="720" src="https://www.youtube.com/embed/O0otS0NDWGQ" frameborder="0" allowfullscreen></iframe>
+				</section>
+
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 		<script src="js/custom.js"></script>
+		<!-- / Live reload - Martijn's reload server: 6278456 -->
+		<script src="//localhost:6278456/livereload.js"></script>
+		<!-- / Live reload -->
 	</body>
 </html>
